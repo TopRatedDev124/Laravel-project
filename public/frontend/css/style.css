@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+/*****************************************************
+Color Section Begin
+*****************************************************/
+.background-primary{background: #0d9587 !important;}
+.background-secoundary{background: #75c6bf !important;}
+.color-primary{color: #0d9587 !important;}
+.color-secoundary{color: #75c6bf !important;}
+.color-gray{color: #878787}
+.background-pink{background: #574C76 !important;}
+.color-white{color: #FFFFFF !important;}
+.color-black{color: #0E0940;}
+/*****************************************************
+Helper Classes Section Begin
+*****************************************************/
+.font-12 {
+    font-size: 12px;
+}
+.font-16 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.font-16-bold {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #6B6B6B;
+}
+
+.font-16-week {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: white;
+}
+
+.font-24 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    color: #E5D1FF;
+    text-align: center;
+    line-height: 36px;
+}
+
+.font-24-bold {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #6B6B6B;
+}
+
+.border-radius-20px{
+    border-radius: 20px;
+}
+.mt-5px {
+    margin-top: 15px;
+}
+
+.ml-30px {
+    margin-left: 30px;
+}
+
+.m-h-btn {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+
+.border {
+    border: 1px solid #0D9587 !important;
+    border-radius: 10px;
+}
+.nav-var{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(min-width: 1440px) {
+    .header-home-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0.5;
+        width: 100%;
+    }  
+    .pricing-container {
+        padding: 0 344px;
+    }
+}
+
+@media(min-width: 992px) {
+    .lg-pt-33px {
+        padding-top:19px;
+        padding-left: 80px;
+    }
+    .lg-page-pt-33px {
+        padding-top:19px;
+        padding-left: 80px;
+        padding-bottom: 15px;
+    }
+    .lg-pt-40px {
+        padding-top: 47px;
+        padding-right: 78px;
+    }
+    .lg-font-32 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .lg-ml-45px {
+        margin-left: 45px;
+    }
+    .lg-font-20 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .lg-font-24 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        color: #E5D1FF;
+        text-align: center;
+        line-height: 36px;
+    }
+    .description {
+        text-align: center;
+        padding: 132px 61px 0 61px;
+        margin-left: 81px;
+    }
+    .lg-pl-170px {
+        padding-left: 170px;
+    }
+    .lg-mt-50px {
+        margin-top: 124px;
+    }    
+}
+
+@media (max-width: 1440px) {
+    .pricing-container {
+        padding: 0 250px;
+    }
+}
+
+@media(max-width: 992px) {
+    .md-display-none {
+        display: none;
+    }
+    .description {
+        text-align: center;
+        padding: 60px 61px 0 61px;
+    }
+    .md-pt-20px {
+        padding-bottom: 20px !important;
+    }
+    .md-font-24 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        color: #E5D1FF;
+        text-align: center;
+        line-height: 36px;
+    }
+    .md-mt-50px {
+        margin-top: 45px;
+    }
+    .md-mt-124px {
+        margin-top: 124px;
+    }
+    .md-font-32 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 16px;
+    }
+    .pricing-container {
+        padding: 0 160px;
+    }
+
+}
+@media (max-width: 768px) {
+    .sm-text-center {
+        text-align: center;
+    }
+    .sm-mt-20px {
+        margin-top: 20px;
+    }
+    .sm-align-center {
+        justify-content: center;
+        display: flex;
+    }
+    .sm-magin-auto {
+        margin: auto;
+    }
+    .sm-mt-50px {
+        margin-top: 45px;
+    }
+    .sm-font-32 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .pricing-container {
+        padding: 0 125px;
+    }
+
+}
+@media(max-width: 576px) {
+    .xs-mt-20px {
+        margin-top: 20px;
+    }
+    .description {
+        text-align: center;
+        padding: 60px 15px 0 15px;
+    }
+    .pricing-container {
+        padding: 0 25px;
+    }
+}
+
+
+/*****************************************************
+Helper Classes Section End
+*****************************************************/
+/*****************************************************
+Color Section Begin
+*****************************************************/
+/*****************************************************
+Navigation Section Begin
+*****************************************************/
+.nav-menu-style{
+    padding-right:20px !important;
+    padding-left: 20px !important;
+}
+.home-header-phone-num {
+    background: #232442;
+    border-radius: 30px;
+}
+.page-header-phone-num {
+    background: white;
+    border-radius: 30px;
+}
+.payment-header-phone-num {
+    background: #0D9587;
+    border-radius: 30px;
+}
+/*****************************************************
+Navigation Section End
+*****************************************************/
+/*****************************************************
+Header Section Begin
+*****************************************************/
+.home-header {
+    background-color: #19227E;
+    overflow: hidden;
+    position: relative;
+
+}
+.header-home-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+}
+.header-logo {
+    position: relative;
+}
+.header-service {
+    position: relative;
+    margin-left: 122px;
+    margin-top: 13.02px;
+}
+
+.intro-text {
+    margin-top: 210px;
+    position: relative;
+}
+
+
+#loginCheck {
+    padding: 0 20px;
+    margin-top: 30px;
+}
+#mobile_no {
+    border-radius: 0px !important;
+}
+.btn-continue {
+    border-radius: 0px !important;
+    width: 100%;
+}
+/*****************************************************
+Header Section End
+*****************************************************/
+/*****************************************************
+Home Section 1 Begin
+*****************************************************/
+#home-section-1{
+    position: relative;
+}
+#home-section-1 .home-left-bg-styling{
+    background: url(../img/mobile-words.png);
+    width: 383px;
+    height: 385px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+#home-section-1 .home-social-icon{
+    height: 50px;
+}
+/*****************************************************
+Home Section 1 End
+*****************************************************/
+/*****************************************************
+Contact Us Section End
+*****************************************************/
+/*****************************************************
+Contact Us Section End
+*****************************************************/
+/*****************************************************
+Edit Info Section Begin
+*****************************************************/
+.header-edit-info-bg{
+    background: url(../img/how-we-work-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+/*****************************************************
+Edit Info Section End
+*****************************************************/
+
+/*****************************************************
+How We Work Section Begin
+*****************************************************/
+/*****************************************************
+How We Work Section End
+*****************************************************/
+/*****************************************************
+Buy & Renew Section Begin
+*****************************************************/
+.header-buy-renew-bg{
+    background: url(../img/how-we-work-2-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+#buy-renew .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border: none !important;
+    outline: none;
+}
+
+#buy-renew  .nav-link  {
+    color: #fff ;
+}
+#buy-renew .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    border: 5px solid white !important;
+    background-color: #0D9587;
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+}
+
+/*****************************************************
+Buy & Renew Section End
+*****************************************************/
+.footer-logo {
+    left: 114px;
+}
+/*****************************************************
+Footer end
+*****************************************************/
+
+.phone-body{
+    width: 267px;
+    height: 383px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color:  #0F9588;
+}
+.phone-screen{
+    width: 238px;
+    height: 323px;
+    background-color: white;
+    border-radius: 5px;
+}
+.home-button{
+    width: 14px;
+    height: 14px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+.speaker-hole{
+    width: 80px;
+    height: 4px;
+    margin-bottom: 13px;
+    background-color: white;
+    border-radius: 10px;
+}
+.phone-wrapper{
+}
+
+.pricing {
+    padding-top: 147px;
+    padding-bottom: 124px;
+}
+
+.faqs-text-font{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;    
+    color: #6B6B6B;
+}
+
+.faqs-accordion {
+    cursor: pointer;
+    padding: 6px 0;
+}
