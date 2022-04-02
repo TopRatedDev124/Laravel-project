@@ -7,7 +7,9 @@
             <div class="phone-wrapper sm-align-center">
                 <div class="phone-body">
                     <div class="speaker-hole"></div>
-                    <div class="phone-screen"></div>
+                    <div class="phone-screen">
+                        Your online mobile recharge transaction is completely guaranteed
+                    </div>
                     <div class="home-button"></div>
                 </div>
             </div>
@@ -50,9 +52,9 @@
                     <div class="row">
                         <div class="col-1 md-display-none">
                         </div>
-                        <div class="col-11 border sm-magin-auto">
-                            <h3 class="text-dark mb-2 font-16 color-primary pt-3">Trusted</h3>
-                            <p class="color-gray text-left  wow animated fadeIn">Integer feugiat eros ut sapien auctor porta. Nulla vitae dolor quis elit porttitor lacinia a a felis.</p>
+                        <div class="col-11 border sm-magin-auto home-trusted">
+                            <h3 class="mb-2 font-16  pt-3">Trusted</h3>
+                            <p class="text-left  wow animated fadeIn">Integer feugiat eros ut sapien auctor porta. Nulla vitae dolor quis elit porttitor lacinia a a felis.</p>
                         </div>
                     </div>
                 </div>

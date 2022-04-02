@@ -61,16 +61,24 @@ Helper Classes Section Begin
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
-    color: white;
 }
 
 .font-24 {
     font-size: 24px;
     font-style: normal;
-    font-weight: 400;
-    color: #E5D1FF;
-    text-align: center;
+    font-weight: 700;
     line-height: 36px;
+}
+
+h3.color-black.font-24::before {
+    content: "";
+    background-color: #0D9587;
+    width: 73px;
+    height: 73px;
+    top: -20px;
+    left: -15px;
+    position: absolute;
+    z-index: -1;
 }
 
 .font-24-bold {
@@ -81,6 +89,16 @@ Helper Classes Section Begin
     line-height: 36px;
     text-align: center;
     color: #6B6B6B;
+}
+
+.font-24-faq {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #6B6B6B;
+    text-align: center;
 }
 
 .border-radius-20px{
@@ -109,152 +127,9 @@ Helper Classes Section Begin
     justify-content: space-between;
 }
 
-@media(min-width: 1440px) {
-    .header-home-bg {
-        position: absolute;
-        left: 0;
-        top: 0;
-        opacity: 0.5;
-        width: 100%;
-    }  
-    .pricing-container {
-        padding: 0 344px;
-    }
+.border-50 {
+    border-radius: 50%;
 }
-
-@media(min-width: 992px) {
-    .lg-pt-33px {
-        padding-top:19px;
-        padding-left: 80px;
-    }
-    .lg-page-pt-33px {
-        padding-top:19px;
-        padding-left: 80px;
-        padding-bottom: 15px;
-    }
-    .lg-pt-40px {
-        padding-top: 47px;
-        padding-right: 78px;
-    }
-    .lg-font-32 {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 48px;
-    }
-    .lg-ml-45px {
-        margin-left: 45px;
-    }
-    .lg-font-20 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
-    }
-    .lg-font-24 {
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        color: #E5D1FF;
-        text-align: center;
-        line-height: 36px;
-    }
-    .description {
-        text-align: center;
-        padding: 132px 61px 0 61px;
-        margin-left: 81px;
-    }
-    .lg-pl-170px {
-        padding-left: 170px;
-    }
-    .lg-mt-50px {
-        margin-top: 124px;
-    }    
-}
-
-@media (max-width: 1440px) {
-    .pricing-container {
-        padding: 0 250px;
-    }
-}
-
-@media(max-width: 992px) {
-    .md-display-none {
-        display: none;
-    }
-    .description {
-        text-align: center;
-        padding: 60px 61px 0 61px;
-    }
-    .md-pt-20px {
-        padding-bottom: 20px !important;
-    }
-    .md-font-24 {
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        color: #E5D1FF;
-        text-align: center;
-        line-height: 36px;
-    }
-    .md-mt-50px {
-        margin-top: 45px;
-    }
-    .md-mt-124px {
-        margin-top: 124px;
-    }
-    .md-font-32 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 16px;
-    }
-    .pricing-container {
-        padding: 0 160px;
-    }
-
-}
-@media (max-width: 768px) {
-    .sm-text-center {
-        text-align: center;
-    }
-    .sm-mt-20px {
-        margin-top: 20px;
-    }
-    .sm-align-center {
-        justify-content: center;
-        display: flex;
-    }
-    .sm-magin-auto {
-        margin: auto;
-    }
-    .sm-mt-50px {
-        margin-top: 45px;
-    }
-    .sm-font-32 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 36px;
-    }
-    .pricing-container {
-        padding: 0 125px;
-    }
-
-}
-@media(max-width: 576px) {
-    .xs-mt-20px {
-        margin-top: 20px;
-    }
-    .description {
-        text-align: center;
-        padding: 60px 15px 0 15px;
-    }
-    .pricing-container {
-        padding: 0 25px;
-    }
-}
-
 
 /*****************************************************
 Helper Classes Section End
@@ -388,6 +263,15 @@ Buy & Renew Section Begin
     outline: none;
 }
 
+.active > a.nav-link > span.active-link {
+    width: 20px;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 4px;
+    background: white;
+}
+
 #buy-renew  .nav-link  {
     color: #fff ;
 }
@@ -407,7 +291,11 @@ Buy & Renew Section End
 /*****************************************************
 Footer end
 *****************************************************/
-
+.home-trusted {    
+    background: #0D9587;
+    border-radius: 10px;
+    color: white;
+}
 .phone-body{
     width: 267px;
     height: 383px;
@@ -419,10 +307,17 @@ Footer end
     background-color:  #0F9588;
 }
 .phone-screen{
+    padding: 21px 18px;
     width: 238px;
     height: 323px;
     background-color: white;
     border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 34px;
+    color: #0D9587;
 }
 .home-button{
     width: 14px;
@@ -440,9 +335,26 @@ Footer end
 }
 .phone-wrapper{
 }
-
+.icon-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.feature-items {
+    width: 170px; 
+    height:170px; 
+    border-radius: 50%; 
+    margin: 20px 40px;
+}
 .pricing {
     padding-top: 147px;
+    padding-bottom: 124px;
+}
+
+.faq {
+    padding-top: 78px;
     padding-bottom: 124px;
 }
 
@@ -456,5 +368,403 @@ Footer end
 
 .faqs-accordion {
     cursor: pointer;
-    padding: 6px 0;
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature-items {    
+    text-align: center;
+}
+
+.feature-items > img {
+    margin-top: 45px;
+}
+
+.feature-image-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: #000000;
+}
+
+.contact {
+    padding-top: 78px;
+    padding-bottom: 98px;
+}
+.faith-content {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+.faith-content-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6B6B6B;
+}
+
+.faith-content-text:nth-child(2n+1) {
+    padding-right: 20px;
+}
+
+.faith-content-text:not(:nth-child(2n+1)) {
+    padding-left: 20px;
+}
+
+.faith-content:last-child {
+    margin-bottom: 0px;
+}
+
+.contact-support { 
+    background: #0D9587;
+    border-radius: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding: 18px 32px;
+    margin: 0 auto;
+}
+
+.contact-support:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.faith {    
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 30px 32px 40px 32px;
+}
+
+.support-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6B6B6B;
+}
+
+.support-description {
+    margin-bottom: 24px;
+}
+
+.support-description > h3 {
+    text-align: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #6B6B6B;
+}
+
+.faith-support-channel {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 24px;
+}
+
+.social-media > h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6B6B6B;
+    margin-top: 20px;
+}
+
+.chat-now {
+    margin-top: 30px;
+}
+
+.chat-now >a {
+    color: #0D9587;
+    text-decoration: none;
+}
+
+.chat-now > a:hover {
+    text-decoration: none;
+}
+
+.socials {
+    grid-template-columns: auto auto auto;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.get-in-touch-call {
+    display: flex;   
+    grid-gap: 24px;
+    margin-top: 74px;
+}
+
+.get-in-touch, .call {
+    background: #0D9587;
+    border-radius: 20px;
+    width: 100%;
+    height: 321px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-now {
+    color: #0D9587;
+    background: #FFFFFF;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 18px 61px;
+}
+
+.call-now:hover {
+    text-decoration: none;
+}
+
+.intro-container {
+    padding: 15px 25px;
+    background: #0D9587;
+    border-radius: 55px;
+    margin-bottom: 30px;
+}
+
+.intro-container > a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding-left: 10px;
+    text-decoration: none;
+}
+.image-1-container {
+    position: relative;
+    left: 170px;
+}
+.image-2-container {
+    position: relative;
+    bottom: 50px;
+}
+.image-3-container {
+    position: relative;
+    left: 220px;
+    bottom: 100px;
+}
+.terms-text-font {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: #6B6B6B;
+}
+.privacy-text-font {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: #6B6B6B;
+}
+.transaction-history .search-content {
+    width: 100%;
+}
+.transaction-history .search-content input {
+    height: 100% !important;
+}
+.transaction-history .search-btn {
+    margin-left: 20px;
+}
+table {
+    width:100%;
+    margin-top: 30px;
+    text-align: center;
+}
+thead {
+    background-color: #0D9587;
+}
+tbody {
+    color: #000000;
+}
+
+tbody tr {
+    border: hidden;
+}
+
+@media(min-width: 1440px) {
+    .header-home-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0.5;
+        width: 100%;
+    }
+    .pricing-container, .faq-container, .terms-container, .privacy-container {
+        padding: 0 344px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .pricing-container, .faq-container, .terms-container, .privacy-container {
+        padding: 0 250px;
+    }
+}
+
+@media(min-width: 992px) {
+    .lg-pt-33px {
+        padding-top:19px;
+        padding-left: 80px;
+    }
+    .lg-page-pt-33px {
+        padding-top:19px;
+        padding-left: 80px;
+        padding-bottom: 15px;
+    }
+    .lg-pt-40px {
+        padding-top: 47px;
+        padding-right: 78px;
+    }
+    .lg-font-32 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .lg-ml-45px {
+        margin-left: 45px;
+    }
+    .lg-font-20 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .lg-font-24 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        color: #E5D1FF;
+        text-align: center;
+        line-height: 36px;
+    }
+    .description {
+        text-align: center;
+        padding: 132px 61px 0 61px;
+        margin-left: 81px;
+    }
+    .lg-pl-170px {
+        padding-left: 170px;
+    }
+    .lg-mt-50px {
+        margin-top: 124px;
+    }
+
+}
+
+@media(max-width: 992px) {
+    .md-display-none {
+        display: none;
+    }
+    .description {
+        text-align: center;
+        padding: 60px 61px 0 61px;
+    }
+    .md-pt-20px {
+        padding-bottom: 20px !important;
+    }
+    .md-font-24 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        color: #E5D1FF;
+        text-align: center;
+        line-height: 36px;
+    }
+    .md-mt-50px {
+        margin-top: 45px;
+    }
+    .md-mt-124px {
+        margin-top: 124px;
+    }
+    .md-font-32 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 16px;
+    }
+    .pricing-container, .faq-container, .terms-container, .privacy-container {
+        padding: 0 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sm-text-center {
+        text-align: center;
+    }
+    .sm-mt-20px {
+        margin-top: 20px;
+    }
+    .sm-align-center {
+        justify-content: center;
+        display: flex;
+    }
+    .sm-magin-auto {
+        margin: auto;
+    }
+    .sm-mt-50px {
+        margin-top: 45px;
+    }
+    .sm-font-32 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .pricing-container, .faq-container , .terms-container, .privacy-container {
+        padding: 0 125px;
+    }
+    .faith-support-channel {
+        display: block;
+    }
+    .support-channel {
+        margin-top: 40px;
+    }
+    .get-in-touch-call {
+        display: block;
+    }
+    .call {
+        margin-top: 40px;
+    }
+}
+
+@media(max-width: 576px) {
+    .xs-mt-20px {
+        margin-top: 20px;
+    }
+    .description {
+        text-align: center;
+        padding: 60px 15px 0 15px;
+    }
+    .xs-font-32 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 36px;
+    }
+    .pricing-container, .faq-container, .terms-container, .privacy-container {
+        padding: 0 25px;
+    }
 }
